@@ -15,8 +15,7 @@ class SimpleComponent extends Component {
   }
   
   render() {
-    return (
-      <div onClick={this.handleClick}/>
+    return <div onClick={this.handleClick}>
         {this.state.mood}
       </div> 
   }
