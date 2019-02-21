@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-const defaultMood = "happy"; 
- 
 class SimpleComponent extends Component {
-  super()
-  
-  this.state = {
-    mood: defaultMood
+  constructor(props) {
+    super(props); 
+    
+    this.state = {
+      mood: 'happy'
+    }; 
   }
   
   render() {
