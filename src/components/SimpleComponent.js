@@ -9,13 +9,17 @@ class SimpleComponent extends Component {
     }; 
   }
   
+  handleClick = () => {
+    const newMood = this.state.mood === 'happy' ? 'sad' : 'happy'; 
+    this.setState({mood: newMood});
+  }
+  
   render() {
     return (
-      <input
-        className="field field-light"
-        onChange={this.props.onChange}
-        maxLength={this.props.limit || defaultLimit}
-      />
-    );
+      <div onClick={this.handleClick}/>
+        {this.state.mood}
+      </div> 
   }
 }
+
+export default SimpleComponent; 
