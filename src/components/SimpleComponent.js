@@ -1,8 +1,13 @@
 
-const defaultLimit = 100; 
+const defaultMood = "happy"; 
  
 class SimpleComponent extends Component {
   super()
+  
+  this.state = {
+    mood: defaultMood
+  }
+  
   render() {
     return (
       <input
